@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.search-form{
+    width: 100%;
+    background-color: rgb(20, 53, 217);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+input {
+    width: 350px;
+    height: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(28, 20, 20);
+}
+
+#searchBtn{
+    border-radius: 5px;
+    position: relative;
+    left: -30px;
+    top: 2px;
+    border: none;
+    height: 33px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.search-icon{
+    width: 16px;
+    height: 16px;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    
+}
+.lightbox{
+    color: black;
+    text-decoration: none;
+}
+
+.photo-card{
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08); 
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(32, 54, 198);
+    color: #ddd;
+    border-radius: 0px 0px 5px 5px;
+}
+.info-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+}
+
+img{
+    object-fit: cover;
+    display: block;
+    width: 270px;
+    height: 150px;
+}
+
+.load-more{
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: rgb(32, 54, 198);
+    color: azure;
+    cursor: pointer;
+    display: none;
+    margin-top: 50px;
+}
+
+.load-more.show{
+    display: block;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+.loader.show{
+    display: block;
+}
+
